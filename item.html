@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" type="image/png" href="">
+  <title>Entertainment band</title>
+
+  <!-- og tags -->
+  <meta property="og:url" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+
+  <!-- twitter tags -->
+  <meta property="twitter:title" content="">
+  <meta property="twitter:description" content="">
+  <meta property="twitter:image" content="">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- css style -->
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <!-- hamburger menu animation -->
+  <link href="css/hamburgers.min.css" rel="stylesheet">
+
+  <!-- animate css -->
+  <link href="css/animate.min.css" rel="stylesheet">
+
+  <!-- inplayer script -->
+  <script type="text/javascript" src="https://assets.inplayer.com/paywall/latest/paywall.min.js"></script>
+
+
+  <!-- fonts  -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- scroll reveal -->
+  <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+
+  <script>
+    function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    var config = {
+      package_id: "49073",
+      merchant_uuid: "9992ff07-0b69-435a-b7ac-b3127d3b3c60",
+      service_url: "https://staging-v2.inplayer.com"
+    }
+  </script>
+</head>
+
+<body>
+
+
+
+  <div id="nav-wrapper">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo page-scroll">
+        <img class="logo" src="img/logo.png" alt="logo">
+        <!-- <b>CONFERENCE </b> -->
+      </a>
+      <ul id="menu" class="animated slideOutUp">
+        <li> <a href="index.html">Home</a> </li>
+        <li> <a href="#asset" class="page-scroll">Music</a> </li>
+        <li> <a href="#faq" class="page-scroll">FAQ</a> </li>
+        <li> <a href="#footer" class="page-scroll">Contact</a> </li>
+        <li><a class="login-button button inplayer-paywall-login">Login</a> </li>
+        <li><a class="login-button button inplayer-paywall-logout">Logout</a> </li>
+      </ul>
+    </div>
+    <button class="hamburger hamburger--squeeze" type="button" id="toggle">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </div>
+
+
+
+  <div id="header" class="header-item">
+    <div class="header-content">
+      <div id="preview-item" class="package"></div>
+    </div>
+  </div>
+
+  <div class="asset" id="asset">
+    <div class="inplayer-paywall" id="inplayer-49047">
+    </div>
+  </div>
+
+  <div class="package-container">
+    <h2>Music videos</h2>
+    <div class="package" id="packages">
+      <div id="package-items-49073" class="package-items">
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div id="faq" class="section">
+    <div class="faq-header">
+      <h2>Need Help?</h2>
+    </div>
+
+    <div class="faq-info">
+
+      <!-- second column -->
+
+      <ul class="accordion">
+
+        <!-- first question -->
+        <li>
+          <a href="#" class="toggle">How do I create an account?</a>
+          <div class="inner ">
+            <p><strong>Step 1.</strong> Click the <strong>Login</strong> button or the content you wish to watch.</p>
+            <p><strong>Step 2.</strong>Select the <strong>Sign up</strong> option at the top of the form.</p>
+            <p><strong>Step 3.</strong> Fill in the register form and click the <strong>Register</strong> button.</p>
+            <p>You will receive an email confirmation for a successfully created account. To find out how to make a
+              purchase, proceed to the next section.</p>
+          </div>
+        </li>
+
+        <!-- second question -->
+        <li>
+          <a href="#" class="toggle">How do I make a purchase?</a>
+          <div class="inner">
+            <p><strong>Step 1.</strong> Click the content you wish to watch.</p>
+            <p><strong>Step 2.</strong> Enter your login credentials (email and password).</p>
+            <p><strong>Step 3.</strong> Select the desired price option and click <strong>Next</strong>.</p>
+            <p><strong>Step 4.</strong> Enter the required information.</p>
+            <p><strong>Step 5.</strong> Click the <strong>Pay</strong> button.</p>
+            <p>You will immediately receive access and an email confirming your purchase. In case the page does not
+              load, please click the refresh button.</p>
+          </div>
+        </li>
+
+        <!-- third question -->
+        <li>
+          <a href="#" class="toggle">How do I login and watch?</a>
+          <div class="inner">
+            <p><strong>Step 1.</strong> Click the <strong>Login</strong> button or the content you wish to watch.</p>
+            <p><strong>Step 2.</strong> On the form that appears, enter your login credentials (email and password).
+            </p>
+            <p><strong>Step 3.</strong> Click on <strong>Login.</strong></p>
+            <p>The page will then refresh and if you have already purchased, the paywall will disappear. If you
+              haven't purchased, please follow the guidelines above on <strong>How do I make a purchase.</strong></p>
+          </div>
+        </li>
+
+        <!-- fourth question -->
+        <li>
+          <a href="#" class="toggle">How do I reset my password?</a>
+          <div class="inner">
+            <p><strong>Step 1.</strong> Navigate to the login form by clicking on the <strong>Login</strong> button or
+              on the content you wish to watch.</p>
+            <p><strong>Step 2.</strong> Click the <strong>Forgot Password</strong> link below the password field on
+              the login form.</p>
+            <p><strong>Step 3.</strong> Enter your <strong>email address</strong> and click the <strong>Reset</strong>
+              button.</p>
+            <p><strong>Step 4.</strong> A new window will pop up. Make sure to leave it open.</p>
+            <p><strong>Step 5.</strong> Check your email. You will receive a <strong>password reset token</strong>. If
+              you don’t see it in your Inbox, make sure to check your Spam and Trash folders.</p>
+            <p><strong>Step 6.</strong> Copy the <strong>Token</strong> and paste it in the first field of the window
+              that popped up previously.</p>
+            <p><strong>Step 7.</strong> Enter your new password in the second and third field.</p>
+            <p><strong>Step 8.</strong> Click <strong>Set</strong> </p>
+            <p>If you do not receive a password reset token please contact us at <a>support@inplayer.com.</a></p>
+          </div>
+        </li>
+      </ul>
+
+
+
+    </div> <!-- faq-info -->
+  </div> <!-- faq -->
+
+
+  <div id="footer">
+    <h2>Let's get in touch</h2>
+    <!-- <span class="divider"></span> -->
+    <div class="">
+      <p>Still having trouble watching the stream, or purchasing your ticket? <br> Don’t hesitate to contact our support
+        team at <a class="link" href="mailto:support@inplayer.com">support@inplayer.com</a> </p>
+    </div>
+    <div class="social-icons">
+      <!-- <a href="https://www.facebook.com/BritishEcolSoc" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a> -->
+      <a href="https://twitter.com/intermissions_" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.instagram.com/intermissions_/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <!-- <a href="/" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a> -->
+      <!-- <a href="/" target="_blank">
+        <i class="fab fa-soundcloud"></i>
+      </a> -->
+    </div>
+
+    <p id="ip">Powered by InPlayer</p>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/creative.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="js/paywall.js"></script>
+
+  <script type="text/javascript">
+
+    var paywall = new InplayerPaywall('faa24cd3-673c-48f2-a87f-b466ae62ee5f', [{
+      id: getParameterByName('id')
+    }]);
+
+    $('#preview-item').html('<div id="inplayer-' + getParameterByName('id') + '" class="inplayer-paywall"></div>');
+
+
+
+  </script>
+</body>
+
+</html>
