@@ -1,5 +1,5 @@
 var config = {
-    // package_id: "49073",
+    package_id: "106009",
     service_url: "https://services.inplayer.com"
 }
 

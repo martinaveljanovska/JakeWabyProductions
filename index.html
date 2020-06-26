@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="icon" type="image/png" href="">
+  <link rel="icon" type="image/png" href="img/logo.png">
   <title>Jake Waby Productions</title>
 
   <!-- og tags -->
@@ -51,7 +51,7 @@
       </a>
       <ul id="menu" class="animated slideOutUp">
         <li> <a href="#about" class="page-scroll">About</a> </li>
-        <li> <a href="#shows" class="page-scroll">Shows</a> </li>
+        <li> <a href=".shows" class="page-scroll">Shows</a> </li>
         <li> <a href="#packages" class="page-scroll">Packages</a> </li>
         
         <li> <a href="#faq" class="page-scroll">FAQ</a> </li>
@@ -72,7 +72,9 @@
   <div id="header">
     <div class="header-content">
       <div class="text">
-        <button href="#music" type="button" class=" page-scroll button">Watch Now</button>
+        <img src="img/logo.png" alt="logo">
+        <button href=".shows" type="button" class="cta-btn page-scroll button">Watch live</button>
+        <button href="#packages" type="button" class=" page-scroll button">See packages</button>
       </div>
       <div class="social-icons">
         <!-- <a href="https://www.facebook.com/BritishEcolSoc" target="_blank">
@@ -94,17 +96,30 @@
     </div>
   </div>
 
-  <div id="about"></div>
+  <div id="about" class="bg-white ">
+   <div class="text">
+<p>As the world continues to uphold social-distancing measures, and the West End still on hiatus, performers and creatives alike are taking to the online world to stay creative and keep theatre alive. Intermissions is a live-streamed interactive experience straight from the home of Alice Fearn feat. live music from West End stars and new graduates (accompanied by Nick Barstow and Directed by Kirk Jameson), interviews and so much more. The show will be streaming live with a three-camera set up all taking place outdoors with a small crew following all social-distancing guidelines. </p>
+   </div>
+<div class="video">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/VCP3JWP_6xw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
 
-  <div class="asset" id="asset">
-    <div class="inplayer-paywall" id="inplayer-49047">
+
+  </div>
+
+  <div class="asset shows" id="asset">
+    <h2>Shows</h2>
+    <div class="inplayer-paywall" id="inplayer-106002">
+    <div class="inplayer-paywall" id="inplayer-106008">
+    <div class="inplayer-paywall" id="inplayer-106207">
+    <div class="inplayer-paywall" id="inplayer-106208">
     </div>
   </div>
 
   <div class="package-container" id="packages">
     <h2>Packages</h2>
     <div class="package" id="packages">
-      <div id="package-items-49073" class="package-items">
+      <div id="package-items-106009" class="package-items">
       </div>
     </div>
   </div>
@@ -255,6 +270,12 @@
     <a id="ip" href="https://www.inplayer.com" target="_blank">Powered by InPlayer</a>
   </div>
 
+  <!-- back to top button -->
+  <a href="#home" class="back-to-top">
+    <i class="fa fa-chevron-circle-up"></i>
+  </a>
+
+
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -268,17 +289,8 @@
 
   <script type="text/javascript">
 
-    var paywall = new InplayerPaywall('faa24cd3-673c-48f2-a87f-b466ae62ee5f', [{ id: 106008 }]);
+    var paywall = new InplayerPaywall('faa24cd3-673c-48f2-a87f-b466ae62ee5f', [{ id: 106002 },{ id: 106008 },{ id: 106207 },{ id: 106208 }]);
 
-    // $.ajax({
-    //   url: 'https://staging-v2.inplayer.com/items/49047',
-    //   success: function (resp) {
-    //     $('#item-title').html(resp.metahash.preview_title);
-    //     $('#item-description').html(resp.metahash.preview_description);
-
-    //   }
-
-    // });
 
   </script>
 </body>

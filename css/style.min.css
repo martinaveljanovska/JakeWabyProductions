@@ -26,7 +26,8 @@ p {
 
 h1, h2, h3 {
   font-family: "Roboto", sans-serif;
-  color: var(--primary);
+  color: #fff;
+  text-align: center;
 }
 
 .container-title {
@@ -103,6 +104,41 @@ a.link {
   text-decoration: none;
   color: #fff;
   opacity: .5;
+  background-color: rgba(9, 9, 9, 0.6);
+  border-radius: 60px;
+  -webkit-transition: 0.2s all ease-out;
+  -webkit-transition: 0.2s all  ease-out;
+  transition: 0.2s all  ease-out;
+}
+
+.back-to-top i {
+  font-size: 38px;
+  position: relative;
+  left: -1.5px;
+  top: -1.5px;
+}
+
+.back-to-top:hover {
+  opacity: 1;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.back-to-top {
+  background: none;
+  display: none;
+  margin: 0;
+  position: fixed;
+  bottom: 150px;
+  right: 23px;
+  width: 35px;
+  height: 35px;
+  z-index: 100;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.5;
   background-color: rgba(9, 9, 9, 0.6);
   border-radius: 60px;
   -webkit-transition: 0.2s all ease-out;
@@ -212,7 +248,7 @@ a.link {
   background-size: cover;
   background-position: center;
   height: 100%;
-  min-height: 100vh;
+  min-height: 70vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,10 +256,6 @@ a.link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-#header.header-item {
-  background-image: url("../img/header-item.jpg");
 }
 
 #header .header-content {
@@ -242,13 +274,18 @@ a.link {
   padding: 30px 20px;
   width: 100%;
   max-width: 700px;
-  margin: 0 auto 30px;
+  margin: 50px auto;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   -webkit-transition: 0.2s all ease-out;
   -webkit-transition: 0.2s all  ease-out;
   transition: 0.2s all  ease-out;
+}
+
+#header .header-content .text img {
+  width: 100%;
+  height: 100%;
 }
 
 #header .header-content .text h1 {
@@ -810,7 +847,6 @@ html {
 }
 
 body {
-  background-color: var(--dark);
   color: #fff;
   margin: 0;
   padding: 0;
@@ -976,5 +1012,26 @@ body #nav-wrapper .nav-container .nav-logo .logo {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+body #about {
+  max-width: 1400px;
+  padding: 50px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body #about .text {
+  max-width: 700px;
 }
 /*# sourceMappingURL=style.min.css.map */
