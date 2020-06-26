@@ -1021,9 +1021,9 @@ body #about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1034,5 +1034,12 @@ body #about {
 
 body #about .text {
   max-width: 700px;
+  margin: 0 30px;
+}
+
+@media screen and (max-width: 560px) {
+  body #about .video iframe {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.min.css.map */
