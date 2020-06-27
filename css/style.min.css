@@ -271,10 +271,9 @@ a.link {
   color: #fff;
   font-family: "Roboto", sans-serif;
   text-align: center;
-  padding: 30px 20px;
   width: 100%;
   max-width: 700px;
-  margin: 50px auto;
+  margin: 120px auto 30px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -534,6 +533,7 @@ a.link {
 
 .package-container h2 {
   margin-bottom: 60px;
+  color: var(--primary);
 }
 
 .package-container .package {
@@ -566,7 +566,7 @@ a.link {
 }
 
 .package-container .package .package-items .package-item .content {
-  height: 300px;
+  height: 500px;
   padding: 10px;
   background-size: cover;
   background-position: center;
@@ -645,7 +645,22 @@ a.link {
 
 .asset {
   padding: 30px 20px;
-  background-color: #0a29a3;
+  background-color: #073778;
+}
+
+.asset #preview-container {
+  margin: 30px !important;
+}
+
+.asset .asset-show {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .asset .inplayer-preview-box {
@@ -845,6 +860,7 @@ html {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -951,7 +967,7 @@ body #nav-wrapper .nav-container .nav-logo {
 }
 
 body #nav-wrapper .nav-container .nav-logo .logo {
-  width: 120px;
+  width: 200px;
 }
 
 @media (min-width: 790px) {
@@ -1012,6 +1028,11 @@ body #nav-wrapper .nav-container .nav-logo .logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    background-color: #073778;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
   }
 }
 

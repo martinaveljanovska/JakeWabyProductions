@@ -5,6 +5,7 @@ html{
 }
 *{
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -88,7 +89,7 @@ body{
         color: #fff;
 
         .logo{
-          width: 120px;
+          width: 200px;
         }
       }
 
@@ -148,6 +149,9 @@ body{
 
           &.slideInDown {
             display: flex;
+            background-color: #073778;
+            align-items: center;
+            padding: 0;
           }
         }
       }

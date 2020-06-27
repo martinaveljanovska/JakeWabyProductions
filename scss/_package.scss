@@ -4,6 +4,7 @@
 
   h2{
     margin-bottom: 60px;
+    color: var(--primary);
   }
 
   .package{
@@ -30,7 +31,7 @@
           -webkit-transition: all linear .15s;
 
           .content {
-            height: 300px;
+            height: 500px;
             padding: 10px;
             background-size: cover;
             background-position: center;
@@ -107,11 +108,11 @@
           }
         } // package item
 
-        &#package-items-two{
-          .package-item{
-            // width: 32%;
-          }
-        }
+        // &#package-items-two{
+        //   .package-item{
+        //     // width: 32%;
+        //   }
+        // }
       } // package items
 
   } // package
