@@ -392,6 +392,7 @@ a.link {
 #faq {
   background-color: #ffffff;
   padding: 30px;
+  color: #111;
 }
 
 #faq h2 {
@@ -450,6 +451,11 @@ a.link {
   border-bottom-right-radius: 0.3em;
   border-bottom-left-radius: 0.3em;
   border-top: none;
+}
+
+#faq .faq-info ul li .inner h3 {
+  color: #111;
+  text-align: left;
 }
 
 @media (max-width: 950px) {
@@ -1056,6 +1062,11 @@ body #about {
 body #about .text {
   max-width: 700px;
   margin: 0 30px;
+  color: #111;
+}
+
+body #about .text p:nth-child(4) {
+  font-style: italic;
 }
 
 @media screen and (max-width: 560px) {

@@ -170,6 +170,10 @@ body{
   .text {
     max-width: 700px;
     margin: 0 30px;
+    color: #111;
+    p:nth-child(4) {
+      font-style: italic;
+    }
   }
 }
 
