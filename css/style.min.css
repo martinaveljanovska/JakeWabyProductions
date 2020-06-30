@@ -355,6 +355,7 @@ a.link {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
+    margin-top: 50px;
   }
   #header .header-content .image {
     margin: 30px;
@@ -1061,7 +1062,7 @@ body #about {
 
 body #about .text {
   max-width: 700px;
-  margin: 0 30px;
+  margin: 30px;
   color: #111;
 }
 
