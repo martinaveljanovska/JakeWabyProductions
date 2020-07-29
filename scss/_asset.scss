@@ -1,7 +1,16 @@
 .asset{
   padding: 30px 20px;
-  background-color: #0a29a3;
+  background-color: #073778;
 
+  #preview-container {
+    margin:30px !important;
+    
+  }
+  .asset-show {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
     .inplayer-preview-box{
       padding: 0;
       background: transparent !important;
@@ -198,8 +207,6 @@
         box-sizing: border-box;
         padding: 0 4%;
 
-        //  .inplayer-title{
-        //  }
        }
 
        .inplayer-buybutton{

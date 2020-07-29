@@ -23,7 +23,9 @@ $(function () {
         location.reload();
     });
 
-
+    paywall.on('inject', function(e, data) {
+        $('.inplayer-paywall').css("margin", "30px")
+    });
 
 
 })
